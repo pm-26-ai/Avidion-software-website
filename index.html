@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avidion Software</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<div id="vanta-bg">
+  <div class="content">
+    <!-- all your site content goes here -->
+  </div>
+</div>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">Avidion</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div id="particles-js"></div>
+  <div class="content">
+    <!-- your website content -->
+  </div>
+  <section class="hero">
+    <h1><span>Innovating</span> the Future</h1>
+    <p>AI, Cloud, and Digital Transformation Experts</p>
+    <a href="#services" class="cta">Explore Services</a>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+
+      <!-- <a href="services/ai-integration.html" class="card">AI Integration</a>
+<a href="services/custom-website.html" class="card">Custom Website Development</a>
+<a href="services/ai-chatbot.html" class="card">AI Chatbot</a>
+<a href="services/crm.html" class="card">CRM</a>
+<a href="services/erp.html" class="card">ERP</a>
+<a href="services/cloud-migration.html" class="card">Cloud Migration</a>
+<a href="services/digital-transformation.html" class="card">Digital Transformation</a> -->
+
+      <div class="card" onclick="openModal('ai')">AI Integration</div>
+
+      <div class="card" onclick="openModal('ai')">Custom Website Development</div>
+      <div class="card" onclick="openModal('ai')">AI Integration</div>
+      <div class="card" onclick="openModal('ai')">AI Chatbots</div>
+      <div class="card" onclick="openModal('ai')">Websites with AI Chatbot</div>
+      <div class="card" onclick="openModal('ai')">CRM Systems</div>
+      <div class="card" onclick="openModal('ai')">ERP Solutions</div>
+      <div class="card" onclick="openModal('ai')">Cloud Migration</div>
+      <div class="card" onclick="openModal('ai')">Digital Transformation</div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Avidion</h2>
+    <p>We create cutting-edge digital solutions for the modern world. From AI to enterprise tools, we’ve got you
+      covered.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="chatbot-choice">
+    <h3>Choose Your Assistant</h3>
+    <button onclick="toggleCustomBot()">Talk to Avidion AI 🤖</button>
+    <button onclick="toggleLyro()">Ask Lyro 👩‍💻</button>
+  </section>
+  <section id="chatbot-section" class="section">
+    <h2>Talk to Our AI Bot 🤖</h2>
+    <div id="chatbox" class="chatbox">
+      <div class="messages" id="messages"></div>
+      <div class="input-area">
+        <input type="text" id="userInput" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="startListening()">🎤</button>
+        <div id="chatbot-container" style="display: none;">
+          <!-- Chatbot content here -->
+          <h3>Avidion AI Assistant</h3>
+          <button onclick="toggleCustomBot()">Talk to Avidion AI 🤖</button>
+
+          <p>Hi! I’m your AI assistant. Ask me anything!</p>
+          <input type="text" id="userInput" placeholder="Type your message..." />
+          <button onclick="sendMessage()">Send</button>
+          <div id="chatOutput"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div id="chatbot-container" style="display:none;">
+    <!-- Your existing voice-enabled chatbot -->
+  </div>
+
+
+  <footer>
+    <p>© 2025 Avidion Software. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function () {
+      console.log('Particles loaded');
+    });
+  </script>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+  <script>
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x00fff0,
+      backgroundColor: 0x0d0d0d
+    });
+  </script>
+  <script src="//code.tidio.co/lbnnsfveobsnsry4ligbfxdxd7dvqgtg.js" async></script>
+</body>
+
+</html>
